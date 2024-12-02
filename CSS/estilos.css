@@ -1,0 +1,95 @@
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    /* Estilos para el contenedor principal */
+    .contenedor {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Estilos para los campos de entrada (formulario) */
+    .grupo-entrada {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    /* Estilos al enfocar un campo de entrada */
+    input:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+    /* Estilos para los botones */
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /* Estilos cuando se pasa el ratón sobre el botón */
+    button:hover {
+        background-color: #218838;
+    }
+
+    /* Estilos para mostrar mensajes de error o éxito */
+    #mensaje {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 16px;
+        color: green;
+    }
+
+    /* Escondemos la sección de registro al inicio */
+    #seccion-registrarse {
+        display: none;
+    }
+
+    .seccion {
+        margin-bottom: 20px;
+    }
+
+    /* Estilos para los enlaces */
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }

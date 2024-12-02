@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma - Registro / Ingreso</title>
+    <link rel="stylesheet" href="/CSS/estilos.css">
+</head>
+<body>
+    <!-- Contenedor principal donde estarán las secciones de login y registro -->
+    <div class="contenedor">
+        
+        <!-- Sección de inicio de sesión -->
+        <div id="seccion-login" class="seccion">
+            <h2>Iniciar Sesión</h2>
+            <!-- Formulario para iniciar sesión -->
+            <form id="formulario-login">
+                <div class="grupo-entrada">
+                    <label for="login-usuario">Nombre de Usuario:</label>
+                    <input type="text" id="login-usuario" required>
+                </div>
+                <div class="grupo-entrada">
+                    <label for="login-contraseña">Contraseña:</label>
+                    <input type="password" id="login-contraseña" required>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+                <!-- Enlace para mostrar el formulario de registro -->
+                <p>No tienes cuenta? <a href="javascript:void(0);" id="mostrar-registrarse">Regístrate</a></p>
+            </form>
+        </div>
+
+        <!-- Sección de registro de nuevos usuarios -->
+        <div id="seccion-registrarse" class="seccion">
+            <h2>Registrarse</h2>
+            <!-- Formulario para registro de nuevos usuarios -->
+            <form id="formulario-registrarse">
+                <div class="grupo-entrada">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="grupo-entrada">
+                    <label for="usuario">Nombre de Usuario:</label>
+                    <input type="text" id="usuario" required>
+                </div>
+                <div class="grupo-entrada">
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" required>
+                </div>
+                <button type="submit">Registrarse</button>
+                <!-- Enlace para mostrar el formulario de inicio de sesión -->
+                <p>Ya tienes cuenta? <a href="javascript:void(0);" id="mostrar-login">Inicia sesión</a></p>
+            </form>
+        </div>
+
+        <!-- Div para mostrar mensajes de error o éxito -->
+        <div id="mensaje"></div>
+    </div>
+
+    <script src="/JS/script.js"></script>
+</body>
+</html>
